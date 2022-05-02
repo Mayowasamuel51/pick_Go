@@ -1,0 +1,87 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="\PickGo/fontawesome-free-6.0.0-beta3-web/css/all.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	</head>
+	<body>
+		<style>
+			body{
+				background: #1481BA;
+			}
+		</style>
+		<section class="columns">
+			<div class="card is-two-fifths is-offset-4 mt-5 mb-6 column">
+				<h1 class="has-text-centered is-centered has-text-weight-bold is-size-3">PickGo</h1>
+				<div class="card-header "><header class="card-header-title">Make Your Fast Orders</header></div>
+				<div class="card-content">
+					<form action="http://localhost/PickGo/userpage/Backend/review.php" method="post">
+						<div class="field">
+							<label for="" class="has-text-weight-bold">Your Name</label>
+							<p class="control has-icons-left has-icons-right">
+								<input class="input" type="text" placeholder="Your name "name="name">
+								<span class="icon is-small is-left">
+									<i class="fas fa-user"></i>
+								</span>
+								<span class="icon is-small is-right">
+									<i class="fas fa-check"></i>
+								</span>
+							</p>
+						</div>
+						<div class="field">
+							<label for="" class="has-text-weight-bold">Current Address</label>
+							<p class="control has-icons-left has-icons-right">
+								<input class="input" type="text" placeholder="Address "name="address">
+								<span class="icon is-small is-left">
+									<i class="fas fa-location-arrow"></i>
+								</span>
+							</p>
+						</div>
+						
+						<div class="field">
+							<label for="" class="has-text-weight-bold">Phone Number</label>
+							<p class="control has-icons-left has-icons-right">
+								<input class="input" type="text" placeholder="Phone Number"name="phone">
+								<span class="icon is-small is-left">
+									<i class="fas fa-phone"></i>
+								</span>
+							</p>
+						</div>
+						<div class="field">
+							<label for="" class="has-text-weight-bold">Delivery Type</label><br>
+							<div class="select is-link mt-4 ">
+								<select name="deliverytype" id="">
+									<option value="home_delivery">Home Delivery </option>
+									<option value="pick_up">Come pick </option>
+									<option value="office_delivery">office  Delivery </option>
+								</select>
+							</div>
+						</div>
+						
+						
+						<div class="field">
+							<label for="" class="has-text-weight-bold">Delivery Food</label><br>
+							<div class="select is-link mt-4 ">
+								<select name="deliveryfood" id="">
+									<option value="pizza">Pizza  </option>
+									<option value="cake">cake </option>
+									<option value="pepper">Pepper </option>
+								</select>
+							</div>
+						</div>
+
+						<div class="mt-3">
+							<label for="" class="has-text-weight-bold">Add your extra wishes </label><br>
+							<textarea name="wishes" class="textarea"></textarea>
+						</div>
+						<button name="btn" class="button is-success is-fullwidth mt-5 mb-6">Submit</button>
+						
+					</form>
+				</div>
+			</div>
+		</section>
+		
+	</body>
+</html>
